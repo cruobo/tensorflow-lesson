@@ -1,0 +1,2 @@
+model_checkpoint_path: "E:\\tf\\lesson\\projector\\projector\\a_model.ckpt-1001"
+all_model_checkpoint_paths: "E:\\tf\\lesson\\projector\\projector\\a_model.ckpt-1001"
