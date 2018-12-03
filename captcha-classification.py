@@ -132,8 +132,7 @@ with tf.Session() as sess:
             learning_rate = sess.run(lr)
             print("Iter:%d/%d epoch:%d,  Loss:%.3f  Accuracy:%.2f,%.2f,%.2f,%.2f  Learning_rate:%.5f" % (
                 i, LOOP_TIMES, i_epoch, loss_, acc0, acc1, acc2, acc3, learning_rate))
-        if acc0>0.9 and acc1>0.9 and acc2>0.9 and acc3>0.9 and i==LOOP_TIMES-1:
-            saver.save(sess,'captcha/model/crack_captcha.model',global_step=i)
-
+    #保存模型    
+    saver.save(sess,'captcha/model/crack_captcha.model',global_step=i)
     coord.request_stop()
     coord.join(threads)
