@@ -11,3 +11,14 @@
 | 2018-12-01    | 模型提交     |  lopo |
 | 2018-12-01    | 修改了说明文档 | lopo|
 | 2018-12-04    | 在次分支添加了内容| lopo|
+
+```flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+&```
+
